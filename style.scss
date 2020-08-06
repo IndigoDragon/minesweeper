@@ -1,0 +1,140 @@
+#outerContainer {
+    background-color: rgb(226, 223, 223);
+    display: flex;
+    flex-flow: column;
+    width: 455px;
+}
+
+#innerContainer {
+    margin: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.grid {
+    background-color: lightgrey;
+    border-color:  #bab7a9 #fff9db #f5f3eb #bab7a9;
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 2px 2px 2px;
+    width: 400px;
+    height: 400px;
+}
+
+.empty {
+    background-color: rgb(226, 223, 223);
+    border: 3px;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    border-style: solid;
+}
+
+.cell {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+/* Cleared cells. */
+.revealedCell {
+    border: 1px;
+    border-color: darkgrey;
+    border-style: none;
+    font-family: 'Nunito';
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Dividers between cleared cells. */
+.revealedCellBottomBorder { border-bottom-style: solid; }
+.revealedCellLeftBorder { border-left-style: solid; }
+.revealedCellRightBorder { border-right-style: solid; }
+.revealedCellTopBorder { border-top-style: solid; }
+
+/* The colours for the numbers that are revealed when a cell is successfully cleared. */
+.number1 { color: blue; }
+.number2 { color: green; }
+.number3 { color: red; }
+.number4 { color: purple; }
+.number5 { color: maroon; }
+.number6 { color: turquoise; }
+.number7 { color: black; }
+.number8 { color: grey; }
+
+.revealedAsset {
+    mix-blend-mode: multiply;
+}
+
+.horizontalSpacer {
+    height: 20px;
+}
+
+/* Panel containing the difficultly level setting and the remaining flags count etc.. */
+#statsPanel {
+    color: white;
+    font-family: "Share Tech Mono";
+    font-size: 20px;
+    background-color:  rgb(30, 40, 50);
+    border-color:  #bab7a9 #f5f3eb  #fff9db  #bab7a9;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.gameMetrics {
+    align-items: center;
+    background-color: rgb(50, 60, 70);
+    display: flex;
+    padding: 5px 8px;
+    width: 36%;
+    justify-content: space-between;
+}
+
+.gameMetric {
+    justify-content: start;
+}
+
+#difficultyControls {
+    flex-direction: column;
+}
+
+.difficultyControl {
+    font-size: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+#newGameButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#result {
+    align-items: center;
+    color: crimson;
+    display: none;
+    font-family: "Orbitron";
+    font-size: 48px;
+    height: 410;
+    justify-content: center;
+    left: 30;
+    position: absolute;
+    top: 110;
+    width: 410;
+    z-index: 10;
+}
+
+#facePanel {
+    font-size: 32px;
+}

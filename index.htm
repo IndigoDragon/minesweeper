@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:800&text=12345678" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Gameboard.js"></script>
+    <script type="text/javascript" src="GameboardCell.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    <div id="outerContainer">
+        <div id="innerContainer">
+            <div id="statsPanel">
+                <div class="gameMetrics">
+                    <label id="difficultyText">
+                        Easy
+                    </label>
+                    <div class="difficultyControls">
+                        <div id="decreaseDifficulty" class="difficultyControl" onclick="decreaseDifficultyLevel();">
+                            ▲
+                        </div>
+                        <div id="increaseDifficulty" class="difficultyControl" onclick="increaseDifficultyLevel();">
+                            ▼
+                        </div>
+                    </div>
+                </div>
+                <div id="facePanel">😐</div>
+                <div class="gameMetrics">
+                    <div class="gameMetric">
+                        🚩<span id="remainingFlagsCount"></span>
+                    </div>
+                    <div class="gameMetric">
+                        ⏱<span id="timerValue"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="result"></div>
+                <div class="grid">
+                </div>
+            </div>
+            <div id="newButtonContainer">
+                <button id="newGameButton" onclick="newGame();">New Game</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
