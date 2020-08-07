@@ -193,14 +193,14 @@
   display: none;
   font-family: "Orbitron";
   font-size: 48px;
-  height: 410;
+  height: 410px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 30;
+  left: 30px;
   position: absolute;
-  top: 110;
-  width: 410;
+  top: 110px;
+  width: 410px;
   z-index: 10;
 }
 
