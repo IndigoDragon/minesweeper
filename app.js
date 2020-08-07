@@ -23,10 +23,10 @@ function renderBoard() {
 
     // The size of the board and grid increases with difficultly.
     const outerContainer = document.getElementById("outerContainer");
-    outerContainer.style.width = gameboard.width * 40 + 50;
+    outerContainer.style.width = gameboard.width * 40 + 50 + "px";
     const grid = document.querySelector('.grid');
-    grid.style.width = gameboard.width * 40;
-    grid.style.height = gameboard.height * 40;
+    grid.style.width = gameboard.width * 40 + "px";
+    grid.style.height = gameboard.height * 40 +"px";
 
     // Render the board. At this point we don't know the location of
     // the mines. There position will be determined when the player
